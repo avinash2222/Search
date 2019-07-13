@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title> Search Result: </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+ 
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+p.ex1 {
+  margin-top: 50px;
+}
+
+</style>
+  
+    <title>DronaMaps Pvt Ltd</title>    
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+
+  </head>
+  
+  
+  
+  
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">DronaMaps Pvt Ltd</h1>
+      </div>
+      </header>
+     
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+	  
+	  
+	  
+    </div>
+	<p class='ex1'></p>
+	<h3 style="margin:auto;max-width:400px"> Search Result :</h3>
+	<pre style="margin:auto;max-width:400px">{{s}}</pre>
+	
+
+
+  </body>
+</html>
+
