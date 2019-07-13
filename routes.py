@@ -19,7 +19,7 @@ def getvalue():
 def compute(result):
     # import packages
     aa=""
-    for foldername,subfolders,files in os.walk(r"Search/pdf/"):
+    for foldername,subfolders,files in os.walk(r"pdf/"):
         for file in files:
             # open the pdf file
             object = PyPDF2.PdfFileReader(os.path.join(foldername,file))
